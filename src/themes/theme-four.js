@@ -33,13 +33,13 @@ class ThemeFour extends Component {
                     <DiscoverSection />
                     <FeatureSection />
                     <Work />
-                    <ScreenshotSection />
-                    <ReviewSection />
-                    <PricingSection />
+                    {/* <ScreenshotSection /> */}
+                    {/* <ReviewSection /> */}
+                    {/* <PricingSection /> */}
                     <FaqSection />
                     <Download />
                     <Subscribe />
-                    <ContactSection />
+                    {/* <ContactSection /> */}
                     <FooterSection />
                 </div>
             </div>
