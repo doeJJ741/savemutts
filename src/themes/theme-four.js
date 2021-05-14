@@ -14,6 +14,7 @@ import Download from '../components/DownloadSection/Download';
 import Subscribe from '../components/SubscribeSection/Subscribe';
 import ContactSection from '../components/ContactSection/Contact';
 import FooterSection from '../components/FooterSection/Footer';
+import Counter from '../components/CounterSection/Counter';
 
 class ThemeFour extends Component {
     render() {
@@ -27,6 +28,7 @@ class ThemeFour extends Component {
                 <div className="main">
                     <Header imageData={"/img/logo-white.png"} />
                     <HeroSection />
+                    <Counter />
                     <ServiceSection />
                     <DiscoverSection />
                     <FeatureSection />
