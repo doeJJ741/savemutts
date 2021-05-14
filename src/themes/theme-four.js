@@ -6,13 +6,9 @@ import FeatureSection from '../components/Features/FeatureFour';
 import ServiceSection from '../components/ServiceSection/ServiceFour';
 import DiscoverSection from '../components/DiscoverSection/DiscoverFour';
 import Work from '../components/WorkSection/Work';
-import ScreenshotSection from '../components/ScreenshotSection/ScreenshotsTwo';
-import ReviewSection from '../components/ReviewSection/ReviewTwo';
-import PricingSection from '../components/PricingSection/PricingOne';
 import FaqSection from '../components/FaqSection/FaqOne';
 import Download from '../components/DownloadSection/Download';
 import Subscribe from '../components/SubscribeSection/Subscribe';
-import ContactSection from '../components/ContactSection/Contact';
 import FooterSection from '../components/FooterSection/Footer';
 import Counter from '../components/CounterSection/Counter';
 
