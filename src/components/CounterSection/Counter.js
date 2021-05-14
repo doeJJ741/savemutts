@@ -4,29 +4,29 @@ const data = [
     {
         count: "10",
         countHeading: "M",
-        title:  "Users"
+        title:  "Holders"
     },
     {
         count: "23",
         countHeading: "K",
-        title:  "Download"
+        title:  "Market Cap"
     },
     {
         count: "9",
         countHeading: "M",
-        title:  "Customer"
+        title:  "Price"
     },
     {
         count: "12",
         countHeading: "K",
-        title:  "Developer"
+        title:  "Total Suply"
     }
 ]
 
 class Counter extends Component {
     render() {
         return (
-            <section className="section counter-area ptb_50">
+            <section className="section counter-area ptb_50" style={{borderBottom:'1px solid whitesmoke'}}>
                 <div className="container">
                     <div className="row justify-content-center">
                         {data.map((item, idx) => {

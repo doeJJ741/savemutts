@@ -501,8 +501,8 @@ img {
     background: inherit !important;
 }
 
-.btn,
-.btn:active,
+/* .btn,
+.btn:active, */
 .btn.sApp-btn:before,
 .bg-overlay::after,
 .benifits-item:after {
