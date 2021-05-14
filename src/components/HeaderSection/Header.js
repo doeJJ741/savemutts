@@ -19,9 +19,9 @@ class Header extends Component {
                         </button>
                         <nav>
                             <ul className="navbar-nav" id="navbar-nav">
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="/#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Home
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#">
+                                        Home
                                     </a>
                                 </li>
                                 <li className="nav-item">

@@ -55,7 +55,7 @@ class FooterSection extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-lg-3">
+                            <div className="col-12 col-sm-6 offset-lg-3 col-lg-3">
                             {/* Footer Items */}
                             <div className="footer-items">
                                 {/* Footer Title */}
@@ -71,32 +71,20 @@ class FooterSection extends Component {
                             </div>
                             <div className="col-12 col-sm-6 col-lg-3">
                             {/* Footer Items */}
-                            <div className="footer-items">
-                                {/* Footer Title */}
-                                <h3 className="footer-title mb-2">{this.state.data.linkText_2}</h3>
-                                <ul>
-                                    {this.state.footerList_2.map((item, idx) => {
-                                        return(
-                                            <li key={`flt_${idx}`} className="py-2"><a href="/#">{item.text}</a></li>
-                                        );
-                                    })}
-                                </ul>
-                            </div>
-                            </div>
-                            <div className="col-12 col-sm-6 col-lg-3">
+                            
                             {/* Footer Items */}
                             <div className="footer-items">
                                 {/* Footer Title */}
                                 <h3 className="footer-title mb-2">{this.state.data.linkText_3}</h3>
                                 {/* Store Buttons */}
                                 <div className="button-group store-buttons store-black d-flex flex-wrap">
-                                    {this.state.footerList_3.map((item, idx) => {
-                                        return(
-                                            <a key={`flth_${idx}`} href="/#">
-                                                <img src={item.image} alt="" />
-                                            </a>
-                                        );
-                                    })}
+                                    <a href="/#" className='btn btn-primary styled mb-2'>
+                                       Buy now
+                                    </a>
+                                    <a href="/#" className='btn btn-primary styled'>
+                                       Whitepaper
+                                    </a>
+                                   
                                 </div>
                             </div>
                             </div>
@@ -111,9 +99,9 @@ class FooterSection extends Component {
                             {/* Copyright Area */}
                             <div className="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
                                 {/* Copyright Left */}
-                                <div className="copyright-left">© Copyrights 2021 sApp All rights reserved.</div>
+                                <div className="copyright-left">© Copyrights 2021 SMUTT All rights reserved.</div>
                                 {/* Copyright Right */}
-                                <div className="copyright-right">Made with <i className="fas fa-heart" /> By <a href="/#">Themeland</a></div>
+                                <div className="copyright-right">Made with <i className="fas fa-heart" /> For <a href="/#">The Doggos</a></div>
                             </div>
                             </div>
                         </div>
