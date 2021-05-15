@@ -92,6 +92,7 @@ class FooterSection extends Component {
                                             <li className="py-2"><a href="/#">Renounce Ownership</a></li>
                                             <li className="py-2"><a href="/#">Contract</a></li>
                                             <li className="py-2"><a href="/#">Charity</a></li>
+                                            <li className="py-2"><a href="/#">Charity</a></li>
                                             {/* <li className="py-2"><a href="/#">{item.text}</a></li> */}
                                         
                                 </ul>
