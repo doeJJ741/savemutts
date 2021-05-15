@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Pie } from 'react-chartjs-2';
 
-const DATA_COUNT = 5;
-
 const initData = {
     heading: "Tokenomics",
     headingText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.",
