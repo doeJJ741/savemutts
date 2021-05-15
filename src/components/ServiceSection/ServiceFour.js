@@ -12,8 +12,38 @@ class ServiceSection extends Component {
         axios.get(`${BASE_URL}`)
             .then(res => {
                 this.setState({
-                    data: res.data,
-                    serviceData: res.data.serviceData
+                    data: {
+                        "headingFive":'Charity', 
+                        "buttonText": "Learn More",
+                        "thumbOne": "/img/features_thumb.png",
+                        "thumbTwo": "/img/service_thumb_2.png",
+                        "thumbThree": "/img/welcome_mockup_2.png",
+                        "thumbFour": "/img/discover_thumb.png",
+                        "thumbFive": "/img/service_thumb_1.png",
+                        "thumbSix": "/img/discover_thumb_2.png",
+                    },
+                    serviceData: [
+                        {
+                            "id": 1,
+                            "iconClass": "fab fa-buffer",
+                            "text": "test text"
+                        },
+                        {
+                            "id": 1,
+                            "iconClass": "fab fa-buffer",
+                            "text": "test text"
+                        },
+                        {
+                            "id": 1,
+                            "iconClass": "fab fa-buffer",
+                            "text": "test text"
+                        },
+                        {
+                            "id": 1,
+                            "iconClass": "fab fa-buffer",
+                            "text": "test text"
+                        },
+                    ]
                 })
                 // console.log(this.state.data)
             })
@@ -21,7 +51,7 @@ class ServiceSection extends Component {
     }
     render() {
         return (
-            <section className="section service-area overflow-hidden ptb_100">
+            <section id='charity' className="section service-area overflow-hidden ptb_100">
                 <div className="container">
                     <div className="row justify-content-center">
                     <div className="col-12 col-lg-6 order-2 order-lg-1">
@@ -47,7 +77,7 @@ class ServiceSection extends Component {
                     <div className="col-12 col-md-8 col-lg-6 order-1 order-lg-2">
                         {/* Service Thumb */}
                         <div className="service-thumb mx-auto">
-                        <img src={this.state.data.thumbFive} alt="" />
+                        <img src={this.state.data.thumbFive} alt="" style={{borderRadius:'6px'}} />
                         </div>
                     </div>
                     </div>

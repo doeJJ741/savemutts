@@ -23,7 +23,7 @@ class FaqSection extends Component {
     }
     render() {
         return (
-            <section className="section faq-area style-two ptb_100">
+            <section id='faqs' className="section faq-area style-two ptb_100">
                 <div className="container">
                     <div className="row justify-content-center">
                     <div className="col-12 col-md-10 col-lg-7">

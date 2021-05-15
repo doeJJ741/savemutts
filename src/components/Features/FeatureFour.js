@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 
 const initData = {
-    heading: "Why Small Business Owner's Loves sApp",
+    heading: "Tokenomics",
     headingText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.",
     headingTexttwo: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati."
 }
 
 const data = [
     {
-        image: "/img/featured_image_1.png",
-        title: "Fully functional",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos."
+        image: "/img/money-bag-svgrepo-com.svg",
+        title: "Earn More By Holding",
+        content: "2% of each transaction is distributed back to you for holding SMUTT."
     },
     {
-        image: "/img/featured_image_2.png",
-        title: "Live Chat",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos."
+        image: "/img/stats-decrease-svgrepo-com.svg",
+        title: "Decreasing Total Supply",
+        content: "2% of each transaction is burned from the total supply."
     },
     {
-        image: "/img/featured_image_3.png",
-        title: "Secure Data",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos."
+        image: "/img/lock-svgrepo-com.svg",
+        title: "Locked Liquidity Forever",
+        content: "2% of each transaction is added to the token’s liquidity, which is locked forever."
     },
     {
-        image: "/img/featured_image_4.png",
-        title: "Easy to Customize",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos."
+        image: "/img/charity-dog-svgrepo-com.svg",
+        title: "Support a Great Cause",
+        content: "3% of each transaction is sent to our charity wallet, which at the end of each month is donated to a charity."
     }
 ]
 
@@ -63,7 +63,7 @@ class FeatureSection extends Component {
     }
     render() {
         return (
-            <section id="features" className="section features-area overflow-hidden mt-5 ptb_100">
+            <section id="tokenomics" className="section features-area overflow-hidden mt-5 ptb_100">
                 <div className="container">
                     <div className="row justify-content-center">
                     <div className="col-12 col-md-10 col-lg-6">

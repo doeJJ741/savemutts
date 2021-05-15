@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 const initData = {
-    heading: "Capture and share your best memories with sApp",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.",
-    headingSlug: "* Available on iPhone, iPad and all Android devices",
+    heading: "Save Mutts",
+    headingTwo: "Save Dogs In Need",
+    content: "There are more than 670,000 dogs per year euthanized in the USA alone. That's why, with Save Mutts, we're here to make a change. Each month, these poor doggos can look forward to our donations, which will not only save them from being killed, but also greatly improve their quality of life.",
+    headingSlug: "",
     playImg: "/img/google-play.png",
-    appleImg: "/img/app-store.png"
+    appleImg: "/img/app-store.png",
+    heroThumb: "/img/welcome_mockup_2.png"
 }
 
 class HeroSection extends Component {
@@ -19,7 +21,7 @@ class HeroSection extends Component {
     }
     render() {
         return (
-            <section id="home" className="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+            <section id="home" className="section welcome-area bg-overlay overflow-hidden d-flex align-items-center" style={{position:'relative', minHeight: 'calc(100vh - 150px)'}}>
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
                     {/* Welcome Intro Start */}
@@ -30,25 +32,24 @@ class HeroSection extends Component {
                         <div className="welcome-bottom">
                             {/* Store Buttons */}
                             <div className="button-group store-buttons d-flex justify-content-center">
-                            <a href="/#">
-                                <img src={this.state.data.playImg} alt="" />
+                            <a href="/#" className='btn btn-secondary btn-lg'>
+                                Join the community
                             </a>
-                            <a href="/#">
-                                <img src={this.state.data.appleImg} alt="" />
+                            <a href="/#" className='btn btn-primary btn-lg'>
+                                Buy now
                             </a>
-                            </div>
+                        </div>
                             <span className="d-inline-block text-white fw-3 font-italic mt-3">{this.state.data.headingSlug}</span>
                         </div>
+                        
                         </div>
                     </div>
                     </div>
                 </div>
                 {/* Shape Bottom */}
-                <div className="shape-bottom">
-                    <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                    <path className="fill" d="M0,6V0h1000v100L0,6z" />
-                    </svg>
-                </div>
+                <div style={{position:'absolute', bottom:0}}>
+                            <img src={'/img/blog-7.png'}></img>
+                        </div>
             </section>
         );
     }

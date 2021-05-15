@@ -41,31 +41,59 @@ class FooterSection extends Component {
                                 <a className="navbar-brand" href="/#">
                                 <img className="logo" src={this.state.data.image} alt="" />
                                 </a>
-                                <p className="mt-2 mb-3">{this.state.data.text}</p>
+                                <p className="mt-2 mb-3">There are more than 670,000 dogs per year euthanized in the USA alone. That's why, with Save Mutts, we're here to make a change.</p>
                                 {/* Social Icons */}
                                 <div className="social-icons d-flex">
-                                    {this.state.iconList.map((item, idx) => {
+                                    <a className={'facebook'} href="/#">
+                                        <i className={'fab fa-telegram'} />
+                                        <i className={'fab fa-telegram'} />
+                                    </a>
+                                    <a className={'facebook'} href="/#">
+                                        <i className={'fab fa-twitter'} />
+                                        <i className={'fab fa-twitter'} />
+                                    </a>
+                                    {/* {this.state.iconList.map((item, idx) => {
                                         return(
                                             <a key={`fi_${idx}`} className={item.link} href="/#">
                                                 <i className={item.iconClass} />
                                                 <i className={item.iconClass} />
                                             </a>
                                         );
-                                    })}
+                                    })} */}
                                 </div>
                             </div>
                             </div>
-                            <div className="col-12 col-sm-6 offset-lg-3 col-lg-3">
+                            <div className="col-12 col-sm-6 col-lg-3">
                             {/* Footer Items */}
                             <div className="footer-items">
                                 {/* Footer Title */}
-                                <h3 className="footer-title mb-2">{this.state.data.linkText_1}</h3>
+                                <h3 className="footer-title mb-2">Sections</h3>
                                 <ul>
-                                    {this.state.footerList_1.map((item, idx) => {
-                                        return(
-                                            <li key={`flo_${idx}`} className="py-2"><a href="/#">{item.text}</a></li>
-                                        );
-                                    })}
+                                  
+                                      
+                                            <li className="py-2"><a href="/#">Home</a></li>
+                                            <li className="py-2"><a href="/#charity">Charity</a></li>
+                                            <li className="py-2"><a href="/#tokenomics">Tokenomics</a></li>
+                                            <li className="py-2"><a href="/#roadmap">Roadmap</a></li>
+                                            <li className="py-2"><a href="/#whitepaper">Whitepaper</a></li>
+                                            <li className="py-2"><a href="/#faqs">Faqs</a></li>
+                                   
+                                </ul>
+                            </div>
+                            </div>
+                            <div className="col-12 col-sm-6 col-lg-3">
+                            {/* Footer Items */}
+                            <div className="footer-items">
+                                {/* Footer Title */}
+                                <h3 className="footer-title mb-2">External Links</h3>
+                                <ul>
+                                   
+                                      
+                                            <li className="py-2"><a href="/#">Renounce Ownership</a></li>
+                                            <li className="py-2"><a href="/#">Contract</a></li>
+                                            <li className="py-2"><a href="/#">Charity</a></li>
+                                            {/* <li className="py-2"><a href="/#">{item.text}</a></li> */}
+                                        
                                 </ul>
                             </div>
                             </div>

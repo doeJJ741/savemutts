@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const initData = {
     heading: "Make cool Landing pages with sApp",
-    content: "There are more than 670,000 dogs per year euthanized in the USA alone. That's why, with Save Mutts, we're here to make a change. Each month, these poor doggos can look forward to our donations, which will not only save them from being killed, but also greatly improve their quality of life.",
+    content: "There are more than 670,000 dogs per year euthanized in the USA alone. That's why, with Save Mutts, we're here to make a change.Each month, these poor doggos can look forward to our donations, which will not only save them from being killed, but also greatly improve their quality of life.",
     headingSlug: "* Available on iPhone, iPad and all Android devices",
     playImg: "/img/google-play.png",
     appleImg: "/img/app-store.png",
