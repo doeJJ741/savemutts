@@ -42,8 +42,8 @@ class Header extends Component {
                                     <a className="nav-link scroll" href="#faqs">FAQS</a>
                                 </li>
                                 <li className="nav-item align-items-center d-flex">
-                                    <a className="btn btn-light cursor-pointer navbar-brand-regular" style={{cursor:'pointer'}}>BUY NOW</a>
-                                    <a className="btn btn-primary styled text-light cursor-pointer navbar-brand-sticky" style={{cursor:'pointer'}}>BUY NOW</a>
+                                    <a className="btn btn-light cursor-pointer navbar-brand-regular" href='/#0' style={{cursor:'pointer'}}>BUY NOW</a>
+                                    <a className="btn btn-primary styled text-light cursor-pointer navbar-brand-sticky" href='/#0'style={{cursor:'pointer'}}>BUY NOW</a>
                                 </li>
                             </ul>
                         </nav>

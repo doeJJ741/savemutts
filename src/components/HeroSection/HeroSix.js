@@ -48,7 +48,7 @@ class HeroSection extends Component {
                 </div>
                 {/* Shape Bottom */}
                 <div style={{position:'absolute', bottom:0}}>
-                            <img src={'/img/blog-7.png'}></img>
+                            <img src={'/img/blog-7.png'} alt='doggo'></img>
                         </div>
             </section>
         );
