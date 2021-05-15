@@ -6,11 +6,17 @@ import FeatureSection from '../components/Features/FeatureFour';
 // import DiscoverSection from '../components/DiscoverSection/DiscoverFour';
 import Work from '../components/WorkSection/Work';
 import FaqSection from '../components/FaqSection/FaqOne';
-import Download from '../components/DownloadSection/Download';
-import Subscribe from '../components/SubscribeSection/Subscribe';
+// import Download from '../components/DownloadSection/Download';
+// import Subscribe from '../components/SubscribeSection/Subscribe';
 import FooterSection from '../components/FooterSection/Footer';
 import Counter from '../components/CounterSection/Counter';
 import ServiceSection from '../components/ServiceSection/ServiceFour'
+
+import ScreenshotSection from '../components/ScreenshotSection/ScreenshotsOne'
+
+
+
+
 class ThemeFour extends Component {
     render() {
         return (
@@ -28,12 +34,13 @@ class ThemeFour extends Component {
                     {/* <DiscoverSection /> */}
                     <FeatureSection />
                     <Work />
-                    {/* <ScreenshotSection /> */}
+                    <ScreenshotSection />
+                    <hr/>
                     {/* <ReviewSection /> */}
                     {/* <PricingSection /> */}
                     <FaqSection />
-                    <Download />
-                    <Subscribe />
+                    {/* <Download /> */}
+                    {/* <Subscribe /> */}
                     {/* <ContactSection /> */}
                     <FooterSection />
                 </div>
