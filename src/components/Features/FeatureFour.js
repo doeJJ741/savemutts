@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import { Pie } from 'react-chartjs-2';
+import Chart from 'chart.js'
+
+const DATA_COUNT = 5;
+const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
 
 const initData = {
     heading: "Tokenomics",
@@ -48,6 +53,74 @@ const imageData = [
     }
 ]
 
+const datas = {
+                             
+    labels: ['Rewards', 'Burned', 'Locked', 'Donation'],
+    datasets: [
+      {
+        label: 'Fee taxes',
+        data: [22.22, 22.22, 22.22, 33.34],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+        ],
+        borderWidth: 1,
+      },
+    ],
+    tooltips: {
+        callbacks: {
+          label: function(tooltipItem, data) {
+            var dataset = data.datasets[tooltipItem.datasetIndex];
+            var meta = dataset._meta[Object.keys(dataset._meta)[0]];
+            var total = meta.total;
+            var currentValue = dataset.data[tooltipItem.index];
+            var percentage = parseFloat((currentValue/total*100).toFixed(1));
+            return currentValue + ' (' + percentage + '%)';
+          },
+          title: function(tooltipItem, data) {
+            return data.labels[tooltipItem[0].index];
+          }
+        }
+      }
+}
+
+const options={
+    legend: {
+        labels: {
+            fontSize: 0
+        }
+    },
+    title: {
+        display: true,
+        text: ''
+      },
+      hover: {mode: null},
+      tooltips: {
+        callbacks: {
+          label: function(tooltipItem, data) {
+            var dataset = data.datasets[tooltipItem.datasetIndex];
+            var meta = dataset._meta[Object.keys(dataset._meta)[0]];
+            var total = meta.total;
+            var currentValue = dataset.data[tooltipItem.index];
+            var percentage = parseFloat((currentValue/total*100).toFixed(1));
+            return currentValue + ' (' + percentage + '%)';
+          },
+          title: function(tooltipItem, data) {
+            return data.labels[tooltipItem[0].index];
+          }
+        }
+      }
+      
+};
+
 class FeatureSection extends Component {
     state = {
         initData: {},
@@ -77,24 +150,24 @@ class FeatureSection extends Component {
                     </div>
                     <div className="row">
                     <div className="col-12 col-md-6">
-                        <div className="features-slider-wrapper overflow-hidden">
+                        <center><h4 className='pb-2'>Total fees on transactions 9%</h4></center>
+                        <div className="pb-1" style={{overflow:'hidden'}}>
+                            
                         {/* Work Slider */}
-                        <ul className="features-slider owl-carousel">
-                            {this.state.imageData.map((item, idx) => {
-                                return(
-                                    <li key={`fi_${idx}`} className="slide-item">
-                                        <img src={item.image} alt="" />
-                                    </li>
-                                );
-                            })}
-                        </ul>
+                        <Pie 
+                            style={{marginTop:'-25px'}}
+                            className="pb-1"
+                            data={datas}
+                            options={options}
+                            
+                        />
                         </div>
                     </div>
                     <div className="col-12 col-md-6 pt-4 pt-md-0">
                         <ul className="features-item">
                             {this.state.data.map((item, idx) => {
                                 return(
-                                    <li key={`ff_${idx}`}>
+                                    <li key={`ff_${idx}`} className='mb-3' style={{backgroundColor:datas.datasets[0].backgroundColor[idx], borderRadius:'6px', border: '1px solid '+datas.datasets[0].borderColor[idx]}}>
                                         {/* Image Box */}
                                         <div className="image-box media icon-1 px-1 py-3 py-md-4">
                                         {/* Featured Image */}
