@@ -36,7 +36,7 @@ class Header extends Component {
                                     <a className="nav-link scroll" href="#roadmap">Roadmap</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link scroll" href="#contact">Whitepaper</a>
+                                    <a className="nav-link scroll" href="#contact">Litepaper</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link scroll" href="#faqs">FAQS</a>

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Pie } from 'react-chartjs-2';
-import Chart from 'chart.js'
 
 const DATA_COUNT = 5;
-const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
 
 const initData = {
     heading: "Tokenomics",
