@@ -39,7 +39,7 @@ class FooterSection extends Component {
                             <div className="footer-items">
                                 {/* Logo */}
                                 <a className="navbar-brand" href="/#">
-                                <img className="logo" src={this.state.data.image} alt="" />
+                                <img className="logo" src='/img/charity-dog-svgrepo-com.svg' alt="smutt" style={{width:'50px'}} />
                                 </a>
                                 <p className="mt-2 mb-3">There are more than 670,000 dogs per year euthanized in the USA alone. That's why, with Save Mutts, we're here to make a change.</p>
                                 {/* Social Icons */}
@@ -72,7 +72,7 @@ class FooterSection extends Component {
                                   
                                       
                                             <li className="py-2"><a href="/#">Home</a></li>
-                                            <li className="py-2"><a href="/#charity">Charity</a></li>
+                                            <li className="py-2"><a href="/#howtobuy">How To Buy</a></li>
                                             <li className="py-2"><a href="/#tokenomics">Tokenomics</a></li>
                                             <li className="py-2"><a href="/#roadmap">Roadmap</a></li>
                                             <li className="py-2"><a href="/#whitepaper">Whitepaper</a></li>
@@ -91,7 +91,6 @@ class FooterSection extends Component {
                                       
                                             <li className="py-2"><a href="/#">Renounce Ownership</a></li>
                                             <li className="py-2"><a href="/#">Contract</a></li>
-                                            <li className="py-2"><a href="/#">Charity</a></li>
                                             <li className="py-2"><a href="/#">Charity</a></li>
                                             {/* <li className="py-2"><a href="/#">{item.text}</a></li> */}
                                         

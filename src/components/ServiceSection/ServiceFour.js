@@ -13,7 +13,7 @@ class ServiceSection extends Component {
             .then(res => {
                 this.setState({
                     data: {
-                        "headingFive":'Charity', 
+                        "headingFive":'How To Buy', 
                         "buttonText": "Learn More",
                         "thumbOne": "/img/features_thumb.png",
                         "thumbTwo": "/img/service_thumb_2.png",
@@ -51,7 +51,7 @@ class ServiceSection extends Component {
     }
     render() {
         return (
-            <section id='charity' className="section service-area overflow-hidden ptb_100">
+            <section id='howtobuy' className="section service-area overflow-hidden ptb_100">
                 <div className="container">
                     <div className="row justify-content-center">
                     <div className="col-12 col-lg-6 order-2 order-lg-1">

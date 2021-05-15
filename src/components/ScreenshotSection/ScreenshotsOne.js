@@ -3,61 +3,27 @@ import { Chrono } from "react-chrono";
 
 const items = [
     {
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: "http://someurl/image.jpg"
-          }
-        }
+        title: "May 2021",
+   
+        cardSubtitle:<div className='mr-2'><i className='fa fa-glass-cheers mr-2'/>Website Launch <br/> Public Coin Launch <br/> Whitepaper <br/> Influencer Marketing <br/><img src='/img/money-svgrepo-com.svg' alt='money' width='20px' className='mr-2'></img>First Monthly Donation</div> 
+        // media: {
+        //   type: "IMAGE",
+        //   source: {
+        //     url: "http://someurl/image.jpg"
+        //   }
+        // }
     },{
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: "http://someurl/image.jpg"
-          }
-        }
+        title: "June 2021",
+        cardSubtitle:<div className='mr-2'>Major Influencer Marketing<br/>Charity Partnerships<br/>AuditCoin<br/>CoinGecko Listing<br/>Live Coin Watch Listing<br/><img src='/img/money-svgrepo-com.svg' alt='money' width='20px' className='mr-2'></img>Second Monthly Donation</div>
     },{
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: "http://someurl/image.jpg"
-          }
-        }
+        title: "July 2021",
+      
+        cardSubtitle:<div className='ml-2 mt-2'>CoinMarketCap Listing <br/> Major Exchange Listings<br/><img src='/img/money-svgrepo-com.svg' alt='money' width='20px' className='mr-2'></img>Third Monthly Donation<br/>More coming soon</div>
     },{
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: "http://someurl/image.jpg"
-          }
-        }
-    },{
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: "http://someurl/image.jpg"
-          }
-        }
-    }
+      title: "August 2021",
+    
+      cardSubtitle:<>More comming soon</>
+  }
 ]
 
 class ScreenshotSection extends Component {

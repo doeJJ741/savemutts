@@ -24,7 +24,8 @@ const data = [
         content: "2% of each transaction is added to the token’s liquidity, which is locked forever."
     },
     {
-        image: "/img/charity-dog-svgrepo-com.svg",
+        
+        image: "/img/dog-svgrepo-com.svg",
         title: "Support a Great Cause",
         content: "3% of each transaction is sent to our charity wallet, which at the end of each month is donated to a charity."
     }
@@ -163,7 +164,7 @@ class FeatureSection extends Component {
                         <ul className="features-item">
                             {this.state.data.map((item, idx) => {
                                 return(
-                                    <li key={`ff_${idx}`} className='mb-3' style={{backgroundColor:datas.datasets[0].backgroundColor[idx], borderRadius:'6px', border: '1px solid '+datas.datasets[0].borderColor[idx]}}>
+                                    <li key={`ff_${idx}`} className='mb-3 pl-3 pr-3' style={{backgroundColor:datas.datasets[0].backgroundColor[idx], borderRadius:'6px', border: '1px solid '+datas.datasets[0].borderColor[idx]}}>
                                         {/* Image Box */}
                                         <div className="image-box media icon-1 px-1 py-3 py-md-4">
                                         {/* Featured Image */}
